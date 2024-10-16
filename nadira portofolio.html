@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadira Gesit Ginanti</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #96c3d6;
+            padding: 20px 0;
+            color: white;
+        }
+        .logo a {
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #16a085;
+        }
+        .profile-pic {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 5px solid #96c3d6;
+            animation: floatImage 3s infinite ease-in-out;
+        }
+        @keyframes floatImage {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .main-section {
+            padding: 60px 0;
+            background-color: white;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .main-section h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333;
+        }
+        .main-section p {
+            font-size: 18px;
+            color: #666;
+        }
+        .soft-skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+        .soft-skill {
+            background-color: #3498db;
+            color: rgb(14, 13, 13);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0px 6px 20px rgba(3, 3, 3, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .soft-skill:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #96c3d6;
+            color: white;
+        }
+        /* Contact Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f7f7f7;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #1abc9c;
+        }
+        .contact-form button {
+            background-color: #52d0e0;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #1f7bc7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="/">Nadira Gesit Ginanti</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#skills">Soft Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <!-- Profile Picture -->
+    <section class="profile-pic">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="nadira.jpg" alt="Foto Profil" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="main-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2>About Me</h2>
+              <p>Hello! I'm Nadira, a fourth-year Information Systems student with a passion for UI/UX design. While studying, I was actively involved in the student legislative council organization, serving on Commission 2 and focusing on social media design. 
+      
+              My experience in designing posters and feeds has honed my skills in staying focused, building strong relationships, and effectively communicating. I'm dedicated, responsible, and perseverant, always striving to give my best in every role. Now, I'm eager to delve deeper into practical UI/UX design and expand my knowledge in this field.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="main-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="nadira.jpg" alt="Foto Profil" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                  <h2>Experiences</h2>
+                  <p>“GSWITCH” is a social media platform focused on making online friends. It provides users to match with online friends who have the same interests. What I do:</p>
+                  <ul>
+                    <li>Designing user interface (UI) for the “GSWITCH” platform with a focus on user-friendly, visually appealing design and user interaction.</li>
+                    <li>Using design software such as Figma to design and develop UI prototypes for “GSWITCH”.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Soft Skills Section -->
+    <section id="skills" class="main-section">
+        <div class="container">
+            <h2 class="text-center">Soft Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="soft-skill">
+                        <h4>Communication</h4>
+                        <p>Strong verbal and written communication skills.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="soft-skill">
+                        <h4>Teamwork</h4>
+                        <p>Effective collaboration and team management.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="soft-skill">
+                        <h4>Problem-Solving</h4>
+                        <p>Creative and analytical thinking to solve problems.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="soft-skill">
+                        <h4>Adaptability</h4>
+                        <p>Flexibility in handling new situations and challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="soft-skill">
+                        <h4>Time Management</h4>
+                        <p>Efficient and organized in completing tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-section">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Nadira Gesit Ginanti
+    </footer>
+
+</body>
+</html>
